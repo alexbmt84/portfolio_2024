@@ -3,7 +3,6 @@ import $ from 'jquery';
 import 'jquery.terminal';
 import figlet from 'figlet';
 import { useNavigate } from 'react-router-dom';
-import Cookies from 'js-cookie';
 import { useColors } from "./colors";
 import { useFiles } from "./files";
 import { useDirectories } from "./directories";
@@ -85,18 +84,13 @@ const useTerminal = (setShowTerminal, showTerminal) => {
                     terminalRef.current.push((password) => {
                         if (password === `${secretPassword}`) {
                             fetch(`${backendUrl}/generate-token`, {
-                                method: 'POST',
-                                headers: {
-                                    'Content-Type': 'application/json'
-                                },
-                                body: JSON.stringify({ password }),
                                 credentials: 'include'
                             })
                                 .then(response => response.json())
                                 .then(data => {
                                     if (data.secret_token) {
-                                        Cookies.set('secret_token', data.secret_token, { path: '/' });
-                                        window.open('/secret');
+                                        document.cookie = `secret_token=${data.secret_token}; path=/`;
+                                        window.open('/secret')
                                     } else {
                                         terminalRef.current.error(`Failed to get the redirect URL.${newLine}`);
                                     }

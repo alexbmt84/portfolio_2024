@@ -93,7 +93,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn" aria-label={"Repository"}>
               <Button
-                href="https://github.com/alexbmt84/portfolio"
+                href="https://github.com/alexbmt84/portfolio_2024"
                 target="_blank"
                 className="fork-btn-inner"
               >
