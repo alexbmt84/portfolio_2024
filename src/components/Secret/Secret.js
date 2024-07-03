@@ -1,48 +1,29 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import React, {useEffect, useState} from "react";
+import {Container} from "react-bootstrap";
 import Particle from "../Particle";
 import '../../secret.css';
-import { useNavigate } from "react-router-dom";
+import './secret_script';
+import {useNavigate} from "react-router-dom";
 import Cookies from 'js-cookie';
 
 function Secret() {
-    const [tokenValid, setTokenValid] = useState(false);
-    const navigate = useNavigate();
 
-    useEffect(() => {
-        const storedToken = Cookies.get("secret_token");
-        if (storedToken) {
-            fetch(`${process.env.REACT_APP_BACKEND_URL}/verify-token`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${storedToken}`
-                },
-                credentials: 'include'
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.valid) {
-                        setTokenValid(true);
-                    } else {
-                        navigate('/home');
-                    }
-                })
-                .catch(() => {
-                    navigate('/home');
-                });
-        } else {
-            navigate('/home');
-        }
-    }, [navigate]);
+        const [tokenValid, setTokenValid] = useState(false);
+        const navigate = useNavigate();
 
-    if (!tokenValid) {
-        return null;
-    }
+        useEffect(() => {
+            const storedToken = Cookies.get("secret_token");
+            if (storedToken) {
+                setTokenValid(true);
+            } else {
+                navigate('/home');
+            }
+        }, [navigate]);
+
 
     return (
         <Container fluid className="mx-auto snake-body">
-            <Particle />
+            <Particle/>
             <Container>
                 <div className="wrapper">
                     <div className="game-details">
