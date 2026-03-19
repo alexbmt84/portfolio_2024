@@ -9,13 +9,13 @@ function AboutCard() {
                     <div className={"about-text"}>
                         <p style={{textAlign: "center"}} className={"about"}>
                             Hi Everyone, I am <span className="purple">Alexis Beaumont </span>
-                            from <span className="purple"> Avignon, France.</span>
+                            from <span className="purple"> Aix-en-Provence, France.</span>
                             <br/>
-                            I am currently employed as a software developer at Glanum.
+                            Currently working as a Cybersecurity & Infrastructure Engineer at AMX1,
                             <br/>
-                            I have been pursuing studies in software development and am currently enrolled in a Master
-                            of Science
-                            (MSc) program in Cybersecurity.
+                            while completing a Master of Science (MSc) in Cybersecurity, 
+                            with a strong focus on securing systems, deploying SIEM solutions, 
+                            and managing Linux-based infrastructures.
                             <br/>
                         </p>
                         <p style={{color: "rgb(155 126 172)"}}  >

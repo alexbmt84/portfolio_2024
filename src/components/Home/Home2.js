@@ -25,19 +25,18 @@ function Home2() {
                             maxWidth: '65%',
                             fontSize: '0.9rem',
                         }}>
-                            I've always been the tech troubleshooter since my school days, and now I channel that
-                            passion into developing innovative web applications. 🛠️
+                            I've always been the go-to person for solving technical challenges, and I now apply that mindset to designing and securing complex infrastructures. 🛠️
                             <br/><br/>
-                            I am skilled in <b className="purple"> PHP, using MVC or DDD design patterns. </b>
+                            With hands-on experience in <b className="purple"> Linux systems, cybersecurity, and SIEM deployment, </b>
+                            I focus on building resilient and secure environments.
                             <br/><br/>
-                            I'm passionate about <b className="purple"> AI-driven projects, cybersecurity, and network
-                            management, </b> always ensuring to integrate <b className="purple"> best practices. </b>
+                            I am particularly driven by <b className="purple"> cybersecurity and DevSecOps, </b>
+                            integrating security at every stage of system design and deployment.
                             <br/><br/>
-                            My development stack includes <b className="purple"> PaaS, IaaS, Docker, </b> and <b
-                            className="purple"> CI/CD </b> to streamline deployment and maintenance processes.
+                            My stack includes <b className="purple"> Docker, CI/CD pipelines, cloud platforms (IaaS/PaaS), </b>
+                            and monitoring solutions to ensure scalable and secure operations.
                             <br/><br/>
-                            As a <b className="purple"> Linux </b> enthusiast, I thrive in using its robust environment
-                            to enhance my development projects.
+                            As a <b className="purple"> Linux </b> enthusiast, I leverage its power to automate, optimize, and secure modern infrastructures.
                         </p>
                     </Col>
                 </Row>
