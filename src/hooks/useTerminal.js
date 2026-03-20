@@ -13,7 +13,7 @@ const useTerminal = (setShowTerminal, showTerminal) => {
     const colors = useColors();
     const files = useFiles();
     const terminalRef = useRef(null);
-    const cvPdf = "/static/media/Alexis_Beaumont_Resume.b103f35e38552fb46296.pdf";
+    const cvPdf = "/static/media/Alexis_Beaumont_Resume.9fc5d5750e6701a17ca5.pdf";
     const newLine = "\n";
     const space = ' ';
     const greenPath = `[${colors.green}${path}]`;
