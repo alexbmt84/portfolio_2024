@@ -5,6 +5,6 @@ export const useFiles = () => {
     const colors = useColors();
 
     return {
-        cv: `[${colors.white}cv.txt]`
+        cv: `[${colors.white}cv.pdf]`
     }
 }

@@ -62,14 +62,14 @@ const useTerminal = (setShowTerminal, showTerminal) => {
                 terminalRef.current.echo(`${myName}${newLine}`);
             },
             cat(file) {
-                if (file === 'cv.txt' || file === 'cv') {
+                if (file === 'cv.pdf' || file === 'cv') {
                     window.open(cvPdf);
                 } else {
                     terminalRef.current.echo(`File not found.${newLine}`);
                 }
             },
             more(file) {
-                if (file === 'cv.txt' || file === 'cv') {
+                if (file === 'cv.pdf' || file === 'cv') {
                     window.open(cvPdf);
                 } else {
                     terminalRef.current.echo(`File not found.${newLine}`);
