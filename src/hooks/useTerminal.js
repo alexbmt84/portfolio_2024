@@ -47,7 +47,7 @@ const useTerminal = (setShowTerminal, showTerminal) => {
                 terminalRef.current.echo(`${greenPath}${newLine}`);
             },
             ls(arg) {
-                if (path === '/root' && (arg === '-a' || arg === '-A')) {
+                if (path === '/root' && (arg === '-a' || arg === '-la')) {
                     terminalRef.current.echo(
                         `${files.cv}${space}${directories.about}${space}${directories.projects}${space}${directories.secret}${newLine}`
                     );
